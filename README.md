@@ -51,7 +51,7 @@ Installing the tool is as simple as running the following commands in the termin
 ```sh
 git clone https://github.com/a5enx00/nxc-apc-injection
 cd nxc-apc-injection
-cp * ~/.nxc/modules/
+cp -r * ~/.nxc/modules/
 
 ```
 
