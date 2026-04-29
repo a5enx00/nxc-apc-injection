@@ -2,7 +2,7 @@
 
 import os
 import subprocess
-
+from nxc.helpers.misc import CATEGORY
 
 class NXCModule:
 
@@ -11,7 +11,7 @@ class NXCModule:
     supported_protocols = ['smb']
     opsec_safe = True
     multiple_hosts = True
-
+    category = CATEGORY.PRIVILEGE_ESCALATION
    
     def options(self, context, module_options):
 
