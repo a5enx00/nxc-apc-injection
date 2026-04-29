@@ -134,7 +134,7 @@ ZeroMemory(&pi, sizeof(pi));
     LPVOID ptr;
 
 
-    wchar_t cmd[] = L"explorer.exe";
+    wchar_t cmd[] = L"notepad.exe";
 
     // Create the process (notepad.exe)
     CreateProcessW(
@@ -143,7 +143,7 @@ ZeroMemory(&pi, sizeof(pi));
     NULL,
     NULL,
     FALSE,
-    0,
+    CREATE_NO_WINDOW | CREATE_SUSPENDED,    // You can use 0 if your process is explorer.exe
     NULL,
     NULL,
     &si,
